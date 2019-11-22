@@ -91,14 +91,16 @@
 
 }
 
-.Ellipse_2 {
-    border-radius: 50%;
-    background-color: rgb(0, 0, 0);
-    opacity: 0.502;
-    position: absolute;
-    left: 673px;
-    top: 725px;
-    width: 8px;
-    height: 8px;
-    z-index: 187;
+html[dir="ltr"] .main-slider {
+    .owl-nav {
+        button {
+            &.owl-prev {
+                justify-content: flex-end;
+            }
+
+            &.owl-next {
+                justify-content: flex-start;
+            }
+        }
+    }
 }

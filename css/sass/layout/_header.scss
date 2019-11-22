@@ -34,6 +34,16 @@
     }
 }
 
+#{$ltr} .service {
+    margin-right: 24px;
+    margin-left: 0;
+
+    .svg {
+        margin-right: 10px;
+        margin-left: 0;
+    }
+}
+
 .lang {
     font-size: 13px;
     color: #fff;
@@ -124,6 +134,21 @@
         .items {
             animation: vibe 0.7s ease forwards;
         }
+    }
+}
+
+#{&$ltr} .user-anchor {
+    margin-right: 0;
+    margin-left: 15px;
+
+    @include xs {
+        margin-right: 0;
+        margin-left: 25px;
+    }
+
+    .mo-user-text {
+        margin-right: 0;
+        margin-left: 9px;
     }
 }
 

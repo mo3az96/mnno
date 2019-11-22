@@ -81,6 +81,32 @@
 
 }
 
+#{$ltr} .navbar-cont {
+
+    @include xs {
+        .mo-navbar {
+            right: auto;
+            left: 0;
+        }
+
+        .nav-li {
+            margin: 7px 0;
+
+            &:last-of-type {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+        .close-btn {
+            right: 25px;
+            left: auto;
+        }
+    }
+
+}
+
+
 .search-form {
     @include xs {
         display: none;

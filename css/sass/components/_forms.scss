@@ -23,6 +23,7 @@
     &::placeholder {
         text-align: right;
         color: #859fc7;
+        font-size: 14px;
     }
 
     &:hover {
@@ -38,6 +39,14 @@
     }
 
 
+}
+
+#{$ltr} .search-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
 }
 
 .search-button {
@@ -60,6 +69,11 @@
     &:hover {
         background-color: $blue;
     }
+}
+
+#{$ltr} .search-button {
+    left: auto;
+    right: 6px;
 }
 
 //////////////news///////////////
@@ -100,6 +114,14 @@
 
 }
 
+#{$ltr} .newsletter-input {
+    text-align: left;
+
+    &::placeholder {
+        text-align: left;
+    }
+}
+
 .newsletter-button {
     position: absolute;
     left: 6px;
@@ -128,4 +150,9 @@
         font-size: 14px;
         color: #fff;
     }
+}
+
+#{$ltr} .newsletter-button {
+    left: auto;
+    right: 6px;
 }

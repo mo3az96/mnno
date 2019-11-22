@@ -35,6 +35,15 @@
     }
 }
 
+#{$ltr} .nav-foot-link {
+
+    &:hover,
+    &:focus {
+        color: #fff;
+        transform: translateX(8px);
+    }
+}
+
 .nav-foot-li {
     margin-bottom: 7px;
 }
@@ -161,4 +170,9 @@
         background-color: $gold;
     }
 
+}
+
+#{$ltr} .social-link {
+    margin-left: 0;
+    margin-right: 8px;
 }
