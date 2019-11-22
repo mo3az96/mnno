@@ -1,0 +1,131 @@
+.search-form {
+    @include xs {
+        display: none;
+    }
+}
+
+.search-cont {
+    position: relative;
+}
+
+.search-input {
+    background-color: #2b4977;
+    width: 325px;
+    height: 46px;
+    border-radius: 50px;
+    padding: 0 32px;
+    font-size: 14px;
+    text-align: right;
+    color: #859fc7;
+    border: 2px solid transparent;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        text-align: right;
+        color: #859fc7;
+    }
+
+    &:hover {
+        border: 2px solid transparent;
+    }
+
+    &:focus {
+        border: 2px solid $gold;
+
+        &:hover {
+            border: 2px solid $gold;
+        }
+    }
+
+
+}
+
+.search-button {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $gold;
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $blue;
+    }
+}
+
+//////////////news///////////////
+
+.newsletter-cont {
+    position: relative;
+}
+
+.newsletter-input {
+    background-color: #fff;
+    width: 100%;
+    height: 46px;
+    border-radius: 50px;
+    padding: 0 32px;
+    font-size: 14px;
+    text-align: right;
+    color: #bbbbbb;
+    border: 2px solid transparent;
+    @include transition(all 0.3s ease-in-out);
+
+    &::placeholder {
+        text-align: right;
+        color: #bbbbbb;
+    }
+
+    &:hover {
+        border: 2px solid transparent;
+    }
+
+    &:focus {
+        border: 2px solid $gold;
+
+        &:hover {
+            border: 2px solid $gold;
+        }
+    }
+
+
+}
+
+.newsletter-button {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background-color: $gold;
+    width: 38px;
+    height: 38px;
+    font-size: 14px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $blue;
+    }
+
+    &:after {
+        content: '\f060';
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 14px;
+        color: #fff;
+    }
+}

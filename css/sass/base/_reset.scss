@@ -1,0 +1,24 @@
+body {
+    position: relative;
+    font-family: Frutiger;
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+        background-color: rgba(#859fc7, 0.5);
+        width: 7px;
+        height: 0px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #ce9b2f;
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: #ce9b2f rgba(#859fc7, 0.5);
+}
+
+.overflow {
+    overflow: hidden;
+}

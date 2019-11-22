@@ -1,0 +1,32 @@
+.navbar-cont {
+    background-color: $blue;
+    border: 1px solid #25416e;
+    overflow: hidden;
+}
+
+.mo-navbar {
+    height: 46px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+
+.nav-li {
+    margin-left: 26px;
+
+    &:last-of-type {
+        margin-left: 0;
+    }
+}
+
+.nav-anchor {
+    font-size: 16px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover,
+    &:focus {
+        color: $gold;
+    }
+}

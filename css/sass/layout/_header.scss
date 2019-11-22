@@ -1,0 +1,139 @@
+////////////////////Top Bar////////////////////
+.top-bar-cont {
+    background-color: $back;
+    overflow: hidden;
+
+    @include xs {
+        display: none;
+    }
+}
+
+.top-bar {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.services {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    margin-left: 24px;
+    cursor: default;
+
+    .svg {
+        margin-left: 10px;
+    }
+}
+
+.lang {
+    font-size: 13px;
+    color: #fff;
+    @include transition(all 0.3s ease-in-out);
+
+    &:hover {
+        color: $gold;
+    }
+}
+
+////////////////////Sec Bar////////////////////
+.sec-bar-cont {
+    background-color: $blue;
+    border: 1px solid #25416e;
+    padding: 15px 0;
+    overflow: hidden;
+}
+
+.sec-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.mo-user-nav {
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include xs {
+        width: 115px;
+    }
+}
+
+.user-anchor {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    @include transition(all 0.3s ease-in-out);
+    color: #fff;
+
+    @include xs {
+        font-size: 20px;
+        margin-right: 25px;
+    }
+
+    .mo-user-text {
+        font-size: 14px;
+        margin-right: 9px;
+
+        @include xs {
+            display: none;
+        }
+    }
+
+    &.mo-cart-icon {
+        color: $blue;
+        border: 1px solid #ececec;
+        border-radius: 50%;
+        background-color: #fff;
+        position: relative;
+        width: 47px;
+        height: 47px;
+    }
+
+    .items {
+        font-size: 12px;
+        color: #fff;
+        background-color: $gold;
+        width: 15px;
+        height: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    &:hover {
+        color: $gold;
+        border-color: $gold;
+
+        .items {
+            animation: vibe 0.7s ease forwards;
+        }
+    }
+}
+
+.xs-ico {
+    display: none;
+
+    @include xs {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 115px;
+    }
+}
