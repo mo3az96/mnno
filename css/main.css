@@ -75,7 +75,7 @@ html {
 }
 
 .overflow {
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 @font-face {
@@ -297,7 +297,7 @@ html[dir=ltr] .nav-li:last-of-type {
     display: block;
     position: absolute;
     top: 25px;
-    font-size: 15px;
+    font-size: 20px;
     cursor: pointer;
     color: #bbbbbb;
   }
