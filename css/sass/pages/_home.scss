@@ -190,7 +190,7 @@
 
     @include xs {
         &:nth-of-type(2n) {
-            margin-left: 14px;
+            margin-left: 0;
             margin-right: 0;
         }
     }
@@ -247,13 +247,6 @@
     }
 }
 
-#{$ltr} .offer-banner {
-
-    &:nth-of-type(2n) {
-        margin-right: 11px;
-        margin-left: 11px;
-    }
-}
 
 ///////Brands//////////
 .brands-cont {

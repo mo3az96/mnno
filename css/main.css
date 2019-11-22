@@ -951,7 +951,7 @@ html[dir=ltr] .banner:nth-of-type(2n) {
 }
 @media (max-width: 767px) {
   html[dir=ltr] .banner:nth-of-type(2n) {
-    margin-left: 14px;
+    margin-left: 0;
     margin-right: 0;
   }
 }
@@ -1001,11 +1001,6 @@ html[dir=ltr] .banner:nth-of-type(2n) {
     margin: 0;
     margin-bottom: 15px;
   }
-}
-
-html[dir=ltr] .offer-banner:nth-of-type(2n) {
-  margin-right: 11px;
-  margin-left: 11px;
 }
 
 .brands-cont {
