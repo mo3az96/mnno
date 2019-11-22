@@ -27,7 +27,8 @@
     border: 5px solid #fff;
     border-radius: 50%;
     animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
-    border-color: $gold $blue $blue $blue;
+    border-color: rgba(#859fc7, 0.5);
+    border-top-color: $gold;
 }
 
 .lds-ring div:nth-child(1) {
