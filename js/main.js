@@ -48,6 +48,7 @@ $(document).ready(function () {
     /////////Slider/////////
     $('.main-slider').owlCarousel({
         items: 1,
+        lazyLoad: true,
         autoplay: false,
         rtl: document.dir == 'rtl' ? true : false,
         loop: true,
